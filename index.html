@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 5 - Contact Us page</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<style>
+    #main{
+        height: 700px;
+        width: 800px;
+        border: 1px solid black;
+        margin: 0 auto;
+        background-image: repeating-linear-gradient(to left,rgb(244, 55, 178,0.7),rgba(244,55,100,0.5));
+    } 
+    #parent{
+        height: 610px;
+        width: 650px;
+        /* border: 1px solid black; */
+        margin: 0 auto;
+        margin-top: 40px;
+        background-color: white;
+        box-shadow: 4px 4px 8px black;
+    }
+    #title{
+        padding: 15px 15px;
+        /* border: 1px solid black; */
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .cont{
+        height: 80px;
+        width: 650px;
+        /* border: 1px solid black; */
+        margin-top: 15px;
+    }
+    .head{
+        height: 30px;
+        width: 400px;
+        /* border: 1px solid black; */
+        /* margin-left: 20px; */
+        margin: 0 auto;
+    }
+    #inp{
+        height: 40px;
+        width: 400px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        margin-left: 124px;
+    }
+    #ip1{
+        box-shadow: 4px 4px 6px black;
+        margin-top: 2px; 
+    }
+    #ip2{
+        box-shadow: 4px 4px 6px black;
+        margin-top: 2px; 
+    }
+    .ip{
+        border: none;
+        margin-top: 5px
+    }
+    #ip3{
+        height: 40px;
+        width: 400px;
+        /* border: 1px solid black; */
+        margin-left: 124px;
+        margin-top: 2px; 
+        box-shadow: 4px 4px 6px black;
+    }
+    #ipp1{
+        margin-top: 10px;
+        border: none;
+    }
+    #msg{
+        height: 180px;
+    }
+    #iadd{
+        border: none;
+        margin-left: 125px;
+        box-shadow:4px 4px 6px black ;
+    }
+    #button{
+        height: 35px;
+        width: 200px;
+        /* border: 1px solid black; */
+        margin: 0 auto;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+        padding-top: 6px;
+        border-radius: 30px;
+        display: flex;
+        box-shadow: 4px 5px 8px black;
+        background-image: linear-gradient(to right,rgb(234, 87, 163) 10%, rgb(247,86,124)100%);
+    }
+    #sub{
+        margin-left: 40px;
+    }
+    #icon{
+        height: 30px;
+        width: 30px;
+        /* border: 1px solid black; */
+        margin-left: 2px;
+    }
+    #anch{
+        text-decoration: none;
+        color: black;
+    }
+</style>
+<body>
+    <div id="main">
+        <div id="parent">
+            <form action="">
+                <div id="title">Contact Us</div>
+                <div id="nmcont" class="cont">
+                    <div id="nm" class="head"><label for="">YOUR NAME*</label></div>
+                    <div id="inp">
+                        <div id="ip1"><input type="text" class="ip" size="20" placeholder="First name"></div>
+                        <div id="ip2"><input type="text" class="ip" size="20" placeholder="Last name"></div>
+                    </div>
+                </div>
+                <div id="mailcont" class="cont">
+                    <div id="mail" class="head"><label for="">EMAIL ADDRESS*</label></div>
+                    <div id="ip3"><input type="email" class="ip"  size="50" name="" id="ipp1" placeholder="Eg.example@email.com"></div>
+                </div>
+                <div id="phnum" class="cont">
+                    <div id="ph" class="head"><label for=""> PHONE NUMBER*</label></div>
+                    <div id="ip3"><input type="tel" name="" id="ipp1" size="50" placeholder="Eg:+1800 000000"></div>
+                </div>
+                <div id="msg" class="cont">
+                    <div class="head"><label for="">MESSAGE*</label></div>
+                    <div id="ip4"><textarea name="" id="iadd" cols="52" rows="8" placeholder="Write Your Message Here..."></textarea></div>
+                </div>
+                 <a href="#" id="anch"><div id="button">
+                     <div id="sub"> Submit </div>
+                    <div id="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
+                </div></a> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
